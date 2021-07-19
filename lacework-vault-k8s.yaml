@@ -129,5 +129,4 @@ metadata:
   name: lacework-config
 data:
   config.json: |
-    {"tokens":{"AccessToken":""}, "tags":{"Env":"k8s", "KubernetesCluster" : "vault-k8s"}, "serverurl":""}
-    
+    {"tokens":{"AccessToken":""}, "tags":{"Env":"k8s", "KubernetesCluster" : "vault-kind-k8s"}, "serverurl":""}
