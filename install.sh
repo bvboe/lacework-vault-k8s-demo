@@ -10,9 +10,6 @@ kind create cluster --image kindest/node:v1.19.11@sha256:07db187ae84b4b7de440a73
 
 helm repo add hashicorp https://helm.releases.hashicorp.com
 
-kubectl create namespace demo
-kubectl config set-context --current --namespace=demo
-
 helm install vault --wait --set='server.dev.enabled=true' hashicorp/vault
 sleep 10
 

@@ -15,6 +15,6 @@ vault write auth/kubernetes/config \
 
 vault write auth/kubernetes/role/myapp \
    bound_service_account_names=app \
-   bound_service_account_namespaces=demo \
+   bound_service_account_namespaces=default \
    policies=app \
    ttl=1h
