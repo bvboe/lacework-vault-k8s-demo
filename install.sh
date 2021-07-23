@@ -11,7 +11,11 @@ kind create cluster --image kindest/node:v1.19.11@sha256:07db187ae84b4b7de440a73
 helm repo add hashicorp https://helm.releases.hashicorp.com
 
 helm install vault --wait --set='server.dev.enabled=true' hashicorp/vault
-sleep 10
+
+while [ `kubectl get pods | grep vault- | grep "1/1" | grep Running | wc -l` -ne 2 ]
+do
+    sleep 1
+done
 
 kubectl cp init-vault-in-container.sh vault-0:/home/vault/init-vault-in-container.sh
 
