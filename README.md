@@ -1,4 +1,6 @@
 # Demo showing how to integrate the Lacework Kubernetes agent with HashiCorp Vault
+
+[![CIS](https://app.soluble.cloud/api/v1/public/badges/f926d9ac-355a-41d1-80da-116ecfcb1017.svg)](https://app.soluble.cloud/repos/details/github.com/bvboe/lacework-vault-k8s-demo)  [![IaC](https://app.soluble.cloud/api/v1/public/badges/43a3f3ea-494d-4503-840d-9f2d9d1380ff.svg)](https://app.soluble.cloud/repos/details/github.com/bvboe/lacework-vault-k8s-demo)  
 This demo shows how to integrate HashiCorp Vault with the Lacework Kubernetes agent, deployed on an instance of Kind.
 
 ## Prerequisites
